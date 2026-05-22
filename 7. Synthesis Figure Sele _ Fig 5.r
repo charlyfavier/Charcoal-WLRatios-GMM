@@ -245,7 +245,7 @@ plot_kde_charcoal = ggplot() +
 ################################################################################
 
 # Tree-derived charcoal proportion
-plot_treecharcoal_proportion <- ggplot(p_fuels, aes(x = Age, y = 1-P_G)) +
+plot_treecharcoal_proportion <- ggplot(p_fuels, aes(x = Age, y = 1-P_H)) +
   geom_line(color = "#006400", linewidth = 1) +
   geom_smooth(color = "#006400", fill = "#006400", se = FALSE, method = "loess", linetype = "dashed") +
   scale_x_reverse(limits = c(MaxAge, MinAge), expand = c(0, 0)) +
